@@ -11,7 +11,7 @@ const TRPCProvider = ({ children }: PropsWithChildren) => {
     trpc.createClient({
       links: [
         httpBatchLink({
-          url: "http://localhost:3000/api/trpc",
+          url: "https://trpc-discord-clone-production.up.railway.app/api/trpc",
         }),
       ],
     })
